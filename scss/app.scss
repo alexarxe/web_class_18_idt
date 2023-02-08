@@ -5,3 +5,18 @@
     align-items         : $aling;
 }
 
+main.content {
+    width: 100vw;
+    min-height: max-content;
+    @include flexible(flex, column, nowrap, center, center)
+}
+
+.popover__contain {
+    width: 100vw;
+    min-height: 300px;
+    @include flexible(flex, row, nowrap, center, center, )
+}
+
+.btn {
+    margin: 20px 10px 20px 10px;
+}

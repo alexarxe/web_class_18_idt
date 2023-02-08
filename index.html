@@ -8,7 +8,12 @@
 
     <link rel="stylesheet" href="./css/main.scss">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/app.css">
+
     <script src="./js/jquery-3.3.1.min.js" defer ></script>
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/bootstrap.bundle.js" defer></script>
+    <script src="./js/app.js" defer></script>
     <script src="./js/popper.min.js" defer ></script>
     <script src="./js/bootstrap.min.js" defer ></script>
 
@@ -16,7 +21,7 @@
 <body>
     <main class="content">
         <div class="section_one">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">   
+            <div id="carouselExampleIndicators d-block w-750" class="carousel slide" data-ride="carousel">   
                 <ol class="carousel-indicators">     
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>     
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>     
@@ -58,6 +63,29 @@
                         </a>     
             </div>
         </div>
+        <div class="popover__contain">
+            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+                Click to toggle popover
+            </button>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on top
+            </button>
+            
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on right
+            </button>
+            
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on bottom
+            </button>
+            
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on left
+            </button>
+        </div>
     </main>
+
+
 </body>
 </html>
